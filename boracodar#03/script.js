@@ -24,6 +24,14 @@ function addLoading(event) {
 
 // ============================================================
 
+const button = document.getElementById("thirdBtn")
+button.addEventListener("mouseover", function () {
+  button.style.left = `${Math.ceil(Math.random() * 90)}%`
+  button.style.top = `${Math.ceil(Math.random() * 90)}%`
+})
+
+// ============================================================
+
 // const updateButton = (function (event) {
 //   let first = true
 //   return function () {

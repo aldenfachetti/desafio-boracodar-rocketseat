@@ -44,6 +44,20 @@ p {
 .secondary {
   --bg-default: #3c3748;
   --bg-hover: #6a617f;
+
+  /* Set up the hover */
+  /* If you aren't using autoprefix, remember to prefix the gradient for other browsers */
+  background-image: linear-gradient(greenyellow, greenyellow);
+  background-size: 0 100%, auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: all 0.2s ease-out;
+}
+
+.secondary:hover {
+  cursor: help;
+  color: #3c3748;
+  background-size: 100% 100%, auto;
 }
 
 .tertiary {
@@ -83,7 +97,7 @@ button:disabled {
 }
 
 .loading {
-  cursor: progress;
+  cursor: wait;
 }
 
 .loading i {
@@ -97,6 +111,17 @@ button:disabled {
 
 .movable i {
   font-size: 18px;
+}
+
+#thirdBtn {
+  position: absolute;
+  width: 280px;
+  height: 48px;
+  margin: 35px 0;
+  padding: 12px 24px;
+  color: white;
+  background-color: dodgerblue;
+  transition: 0.5s;
 }
 
 @keyframes spin {
