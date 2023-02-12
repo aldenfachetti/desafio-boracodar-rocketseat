@@ -5,12 +5,11 @@
 }
 
 body {
-  background-color: #130f1e;
-
   display: grid;
   place-content: center;
-  height: 100vh;
   gap: 16px;
+  height: 100vh;
+  background-color: #130f1e;
 }
 
 #app {
@@ -53,6 +52,10 @@ p {
 }
 
 button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
   background-color: var(--bg-default);
   font-family: "Inter";
   border: 0;
@@ -63,11 +66,6 @@ button {
   font-size: 14px;
   line-height: 24px;
   border-radius: 24px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
 }
 
 button:hover {

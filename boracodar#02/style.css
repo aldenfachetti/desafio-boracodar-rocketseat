@@ -85,16 +85,27 @@ p {
 }
 
 #product-details button {
+  display: inline-block;
   font-size: 12px;
   line-height: 16px;
-
   padding: 8px 16px;
   border: 0.5px solid var(--text-color);
   border-radius: 999px;
-
   background-color: transparent;
-
   margin-top: 20px;
+
+  /* Set up the hover */
+  /* If you aren't using autoprefix, remember to prefix the gradient for other browsers */
+  background-image: linear-gradient(dodgerblue, dodgerblue);
+  background-size: 0 100%, auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: all 0.2s ease-out;
+}
+
+#product-details button:hover {
+  color: #fff;
+  background-size: 100% 100%, auto;
 }
 
 @media (max-width: 680px) {

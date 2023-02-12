@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+  background-color: #1a1924;
+  font-size: 1.6rem;
+  color: #e1e1e6;
+  height: 100vh;
+  overflow: hidden;
+}
+
+body * {
+  /* border: 0.1rem solid red; */
+  font-family: "Roboto", sans-serif;
+}
